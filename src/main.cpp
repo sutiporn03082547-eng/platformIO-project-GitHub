@@ -1,18 +1,17 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
-
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  // กำหนดสถานะขาหลอดไฟบนบอร์ดให้เป็น Output
+  pinMode(LED_BUILTIN, OUTPUT);
+  
+  // เปิดการสื่อสารผ่าน Serial Monitor
+  Serial.begin(9600);
+  Serial.println("Update code successful!");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  digitalWrite(LED_BUILTIN, HIGH); // เปิดหลอดไฟ
+  delay(1000);                     // รอ 1 วินาที
+  digitalWrite(LED_BUILTIN, LOW);  // ปิดหลอดไฟ
+  delay(1000);                     // รอ 1 วินาที
 }
