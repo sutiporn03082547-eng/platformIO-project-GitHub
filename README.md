@@ -27,3 +27,15 @@
 - ภาพ Build SUCCESS และภาพ/วิดีโอการทำงานจริงเมื่อมีบอร์ด
 
 โค้ดนี้เป็นงานตัวอย่างที่จัดเตรียมให้ ต้องตรวจผล Build และผลบนบอร์ดจริงของคุณก่อนอ้างว่าได้ทดสอบกับฮาร์ดแวร์
+
+## ผลทดสอบบน Windows (2026-09-27)
+
+- Uno: Build SUCCESS, RAM 259/2048 bytes, Flash 2022/32256 bytes
+- ESP32 DevKit: Build SUCCESS, RAM 21472/327680 bytes, Flash 269377/1310720 bytes
+- ตรวจ USB แล้วไม่พบบอร์ด จึงไม่ได้ Upload และไม่อ้างผลทดสอบฮาร์ดแวร์
+- ประวัติเดิมใน GitHub ถูกเก็บไว้: f65a548 และ commits ก่อนหน้า
+- 4988848: แก้ LED pin ให้รองรับ Uno/ESP32 และใช้ millis แทน delay
+- cfa9fbc: เปลี่ยนช่วงสลับ LED จาก 1000 ms เป็น 300 ms
+- Repository: https://github.com/sutiporn03082547-eng/platformIO-project-GitHub
+
+บันทึก Build อยู่ในโฟลเดอร์ evidence ของ repository นี้
