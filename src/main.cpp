@@ -4,7 +4,7 @@
 #ifndef LED_PIN
 #define LED_PIN 13
 #endif
-const unsigned long BLINK_INTERVAL_MS = 1000;
+const unsigned long BLINK_INTERVAL_MS = 300;
 unsigned long previousChange = 0;
 bool ledOn = false;
 
